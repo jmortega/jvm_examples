@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test form</title>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="container">
+			<form action="/formpost" method="POST" enctype="application/x-www-form-urlencoded;charset=UTF8"  id="simple-form">
+  				<fieldset>
+    				<legend>Simple form test</legend>
+    				<label>Username</label>
+    				<input type="text" name="username" placeholder="Your username">
+    				<span class="help-block">Write your username</span>
+    				<button type="submit" class="btn">Submit</button>
+  				</fieldset>
+			</form>
+		</div>
+		<script>
+			jQuery(document).ready(function(){
+				jQuery('#simple-form').on('submit',function(e){
+					e.preventDefault()
+					jQuery.ajax({
+						type: "POST",
+						url: "/formpost",
+						data: jQuery(e.target).serialize(),
+						contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+						complete:function(xhr,status) {
+							if(status==='error' || !xhr.responseText){ 
+									alert('error')
+								} else {
+									document.title = xhr.responseText
+									jQuery(e.target).replaceWith('<p class="hello">'+xhr.responseText+'</p>')
+								}
+						}
+
+					})
+				});
+			})
+		</script>
+	</body>
+</html>

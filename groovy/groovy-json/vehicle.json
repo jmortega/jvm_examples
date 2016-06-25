@@ -1,0 +1,10 @@
+{
+    "brand": "Mazda",
+    "model": "5",
+    "fuel": "PETROL",
+    "releaseYear": 2007,
+    "transmission": {
+        "gears": "5",
+        "type": "MANUAL"
+    }
+}

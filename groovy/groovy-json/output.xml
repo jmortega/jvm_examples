@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<o>
+  <items class="array">
+    <e class="object">
+      <animate type="boolean">true</animate>
+      <axes class="array">
+        <e class="object">
+          <fields class="array">
+            <e type="string">x</e>
+          </fields>
+          <position type="string">left</position>
+          <title type="string">Time</title>
+          <type type="string">Time</type>
+        </e>
+        <e class="object">
+          <fields class="array">
+            <e type="string">y</e>
+          </fields>
+          <position type="string">bottom</position>
+          <title type="string">Profit in EUR</title>
+          <type type="string">Numeric</type>
+        </e>
+      </axes>
+      <height type="number">270</height>
+      <insetPadding type="number">20</insetPadding>
+      <series class="array">
+        <e class="object">
+          <axis type="string">bottom</axis>
+          <label class="object">
+            <color type="string">#333</color>
+            <display type="string">insideEnd</display>
+            <field type="string">y</field>
+            <text-anchor type="string">middle</text-anchor>
+          </label>
+          <type type="string">bar</type>
+          <xField type="string">x</xField>
+          <yField class="array">
+            <e type="string">y</e>
+          </yField>
+        </e>
+      </series>
+      <type type="string">chart</type>
+      <width type="number">319</width>
+    </e>
+  </items>
+</o>

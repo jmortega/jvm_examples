@@ -1,0 +1,12 @@
+The scripts located in the src/org/groovy/cookbook folder are meant to be run
+from Eclipse. Import the project in Eclipse by using the
+"File -> Import -> Import existing project" feature of Eclipse.
+
+Alternatively, you can run the scripts from this folder so that the
+required files are found in the classpath. Example:
+
+groovy src/org/groovy/cookbook/CountWords.groovy
+
+or
+
+

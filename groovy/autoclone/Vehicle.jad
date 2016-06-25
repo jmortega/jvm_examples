@@ -1,0 +1,358 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   Vehicle.groovy
+
+import groovy.lang.GroovyObject;
+import groovy.lang.MetaClass;
+import java.lang.ref.SoftReference;
+import org.codehaus.groovy.reflection.ClassInfo;
+import org.codehaus.groovy.runtime.GStringImpl;
+import org.codehaus.groovy.runtime.ScriptBytecodeAdapter;
+import org.codehaus.groovy.runtime.callsite.CallSite;
+import org.codehaus.groovy.runtime.callsite.CallSiteArray;
+
+public class Vehicle
+    implements Cloneable, GroovyObject
+{
+
+    public Vehicle()
+    {
+        CallSite acallsite[] = $getCallSiteArray();
+        MetaClass metaclass = $getStaticMetaClass();
+        metaClass = metaclass;
+        MetaClass _tmp = metaclass;
+    }
+
+    protected Vehicle(Vehicle other)
+    {
+        CallSite acallsite[];
+        Object obj;
+        acallsite = $getCallSiteArray();
+        MetaClass metaclass = $getStaticMetaClass();
+        metaClass = metaclass;
+        metaclass;
+        if(!(acallsite[0].callGroovyObjectGetProperty(other) instanceof Cloneable))
+            break MISSING_BLOCK_LABEL_79;
+        obj = acallsite[1].call(acallsite[2].callGroovyObjectGetProperty(other));
+        (String)ScriptBytecodeAdapter.castToType(obj, java/lang/String);
+        this;
+        JVM INSTR swap ;
+        brand;
+        obj;
+        break MISSING_BLOCK_LABEL_109;
+        Object obj1 = acallsite[3].callGroovyObjectGetProperty(other);
+        (String)ScriptBytecodeAdapter.castToType(obj1, java/lang/String);
+        this;
+        JVM INSTR swap ;
+        brand;
+        obj1;
+        Object obj2;
+        if(!(acallsite[4].callGroovyObjectGetProperty(other) instanceof Cloneable))
+            break MISSING_BLOCK_LABEL_167;
+        obj2 = acallsite[5].call(acallsite[6].callGroovyObjectGetProperty(other));
+        (String)ScriptBytecodeAdapter.castToType(obj2, java/lang/String);
+        this;
+        JVM INSTR swap ;
+        type;
+        obj2;
+        break MISSING_BLOCK_LABEL_197;
+        Object obj3 = acallsite[7].callGroovyObjectGetProperty(other);
+        (String)ScriptBytecodeAdapter.castToType(obj3, java/lang/String);
+        this;
+        JVM INSTR swap ;
+        type;
+        obj3;
+        Object obj4;
+        if(!(acallsite[8].callGroovyObjectGetProperty(other) instanceof Cloneable))
+            break MISSING_BLOCK_LABEL_255;
+        obj4 = acallsite[9].call(acallsite[10].callGroovyObjectGetProperty(other));
+        (Long)ScriptBytecodeAdapter.castToType(obj4, java/lang/Long);
+        this;
+        JVM INSTR swap ;
+        wheelsNumber;
+        obj4;
+        break MISSING_BLOCK_LABEL_285;
+        Object obj5 = acallsite[11].callGroovyObjectGetProperty(other);
+        (Long)ScriptBytecodeAdapter.castToType(obj5, java/lang/Long);
+        this;
+        JVM INSTR swap ;
+        wheelsNumber;
+        obj5;
+        Object obj6;
+        if(!(acallsite[12].callGroovyObjectGetProperty(other) instanceof Cloneable))
+            break MISSING_BLOCK_LABEL_343;
+        obj6 = acallsite[13].call(acallsite[14].callGroovyObjectGetProperty(other));
+        (Engine)ScriptBytecodeAdapter.castToType(obj6, Engine);
+        this;
+        JVM INSTR swap ;
+        engine;
+        obj6;
+        break MISSING_BLOCK_LABEL_373;
+        Object obj7 = acallsite[15].callGroovyObjectGetProperty(other);
+        (Engine)ScriptBytecodeAdapter.castToType(obj7, Engine);
+        this;
+        JVM INSTR swap ;
+        engine;
+        obj7;
+    }
+
+    public Object clone()
+        throws CloneNotSupportedException
+    {
+        CallSite acallsite[] = $getCallSiteArray();
+        return acallsite[16].callConstructor(Vehicle, this);
+    }
+
+    public Object this$dist$invoke$1(String name, Object args)
+    {
+        CallSite acallsite[] = $getCallSiteArray();
+        return ScriptBytecodeAdapter.invokeMethodOnCurrentN(Vehicle, this, (String)ScriptBytecodeAdapter.castToType(new GStringImpl(new Object[] {
+            name
+        }, new String[] {
+            "", ""
+        }), java/lang/String), ScriptBytecodeAdapter.despreadList(new Object[0], new Object[] {
+            args
+        }, new int[] {
+            0
+        }));
+    }
+
+    public void this$dist$set$1(String name, Object value)
+    {
+        CallSite acallsite[] = $getCallSiteArray();
+        Object obj = value;
+        ScriptBytecodeAdapter.setGroovyObjectField(obj, Vehicle, this, (String)ScriptBytecodeAdapter.castToType(new GStringImpl(new Object[] {
+            name
+        }, new String[] {
+            "", ""
+        }), java/lang/String));
+        Object _tmp = obj;
+    }
+
+    public Object this$dist$get$1(String name)
+    {
+        CallSite acallsite[] = $getCallSiteArray();
+        return ScriptBytecodeAdapter.getGroovyObjectField(Vehicle, this, (String)ScriptBytecodeAdapter.castToType(new GStringImpl(new Object[] {
+            name
+        }, new String[] {
+            "", ""
+        }), java/lang/String));
+    }
+
+    protected MetaClass $getStaticMetaClass()
+    {
+        if(getClass() != Vehicle)
+            return ScriptBytecodeAdapter.initMetaClass(this);
+        ClassInfo classinfo = $staticClassInfo;
+        if(classinfo == null)
+            $staticClassInfo = classinfo = ClassInfo.getClassInfo(getClass());
+        return classinfo.getMetaClass();
+    }
+
+    public MetaClass getMetaClass()
+    {
+        metaClass;
+        if(metaClass == null) goto _L2; else goto _L1
+_L1:
+        return;
+_L2:
+        JVM INSTR pop ;
+        metaClass = $getStaticMetaClass();
+        return metaClass;
+    }
+
+    public void setMetaClass(MetaClass metaclass)
+    {
+        metaClass = metaclass;
+    }
+
+    public Object invokeMethod(String s, Object obj)
+    {
+        return getMetaClass().invokeMethod(this, s, obj);
+    }
+
+    public Object getProperty(String s)
+    {
+        return getMetaClass().getProperty(this, s);
+    }
+
+    public void setProperty(String s, Object obj)
+    {
+        getMetaClass().setProperty(this, s, obj);
+    }
+
+    public static void __$swapInit()
+    {
+        CallSite acallsite[] = $getCallSiteArray();
+        $callSiteArray = null;
+    }
+
+    public String getBrand()
+    {
+        return brand;
+    }
+
+    public void setBrand(String s)
+    {
+        brand = s;
+    }
+
+    public String getType()
+    {
+        return type;
+    }
+
+    public void setType(String s)
+    {
+        type = s;
+    }
+
+    public Long getWheelsNumber()
+    {
+        return wheelsNumber;
+    }
+
+    public void setWheelsNumber(Long long1)
+    {
+        wheelsNumber = long1;
+    }
+
+    public Engine getEngine()
+    {
+        return engine;
+    }
+
+    public void setEngine(Engine engine1)
+    {
+        engine = engine1;
+    }
+
+    public void super$1$wait()
+    {
+        super.wait();
+    }
+
+    public String super$1$toString()
+    {
+        return super.toString();
+    }
+
+    public void super$1$wait(long l)
+    {
+        super.wait(l);
+    }
+
+    public void super$1$wait(long l, int i)
+    {
+        super.wait(l, i);
+    }
+
+    public void super$1$notify()
+    {
+        super.notify();
+    }
+
+    public void super$1$notifyAll()
+    {
+        super.notifyAll();
+    }
+
+    public Class super$1$getClass()
+    {
+        return super.getClass();
+    }
+
+    public Object super$1$clone()
+    {
+        return super.clone();
+    }
+
+    public boolean super$1$equals(Object obj)
+    {
+        return super.equals(obj);
+    }
+
+    public int super$1$hashCode()
+    {
+        return super.hashCode();
+    }
+
+    public void super$1$finalize()
+    {
+        super.finalize();
+    }
+
+    private static void $createCallSiteArray_1(String as[])
+    {
+        as[0] = "brand";
+        as[1] = "clone";
+        as[2] = "brand";
+        as[3] = "brand";
+        as[4] = "type";
+        as[5] = "clone";
+        as[6] = "type";
+        as[7] = "type";
+        as[8] = "wheelsNumber";
+        as[9] = "clone";
+        as[10] = "wheelsNumber";
+        as[11] = "wheelsNumber";
+        as[12] = "engine";
+        as[13] = "clone";
+        as[14] = "engine";
+        as[15] = "engine";
+        as[16] = "<$constructor$>";
+    }
+
+    private static CallSiteArray $createCallSiteArray()
+    {
+        String as[] = new String[17];
+        $createCallSiteArray_1(as);
+        return new CallSiteArray(Vehicle, as);
+    }
+
+    private static CallSite[] $getCallSiteArray()
+    {
+        CallSiteArray callsitearray;
+        if($callSiteArray == null || (callsitearray = (CallSiteArray)$callSiteArray.get()) == null)
+        {
+            callsitearray = $createCallSiteArray();
+            $callSiteArray = new SoftReference(callsitearray);
+        }
+        return callsitearray.array;
+    }
+
+    static Class _mthclass$(String s)
+    {
+        try
+        {
+            return Class.forName(s);
+        }
+        catch(ClassNotFoundException classnotfoundexception)
+        {
+            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
+        }
+    }
+
+    private String brand;
+    private String type;
+    private Long wheelsNumber;
+    private Engine engine;
+    private static ClassInfo $staticClassInfo;
+    public static transient boolean __$stMC;
+    private transient MetaClass metaClass;
+    public static long __timeStamp;
+    public static long __timeStamp__239_neverHappen1375127670761;
+    private static SoftReference $callSiteArray;
+
+    static 
+    {
+        __$swapInit();
+        long l = 0L;
+        __timeStamp__239_neverHappen1375127670761 = l;
+        long _tmp = l;
+        long l1 = 0x2bff0fe9L;
+        __timeStamp = l1;
+        long _tmp1 = l1;
+    }
+}

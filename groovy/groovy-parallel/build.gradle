@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+
+repositories { mavenCentral() }
+
+dependencies {
+   compile 'org.codehaus.groovy:groovy-all:2.1.3' 
+   compile 'org.codehaus.gpars:gpars:1.0.0'
+   compile 'com.google.guava:guava:14.0.1'
+   compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.6'
+   compile('org.multiverse:multiverse-beta:0.7-RC-1') { transitive = false }
+   testCompile 'junit:junit:4.+'
+   testCompile 'edu.stanford.nlp:stanford-corenlp:1.3.5'
+
+}

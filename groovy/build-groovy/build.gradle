@@ -1,0 +1,17 @@
+apply plugin: 'groovy'
+
+group = 'org.groovy.cookbook'
+
+repositories { mavenCentral() }
+
+dependencies {
+  groovy 'org.codehaus.groovy:groovy-all:2.0.1'
+  testCompile 'junit:junit:4.10'
+}
+
+
+task info << {
+  println "Name: $project.name"
+  println "Dependencies: "
+  project.configurations.testCompile.allDependencies.each { println it.name }
+}

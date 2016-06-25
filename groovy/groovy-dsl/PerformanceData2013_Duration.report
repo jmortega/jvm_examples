@@ -1,0 +1,8 @@
+Report for getCustomerName
+  Total records: 12
+  Average of duration is 179.0
+  Sum of duration is 2148.0
+Report for getAccountNumber
+  Total records: 4
+  Average of duration is 64.0
+  Sum of duration is 256.0

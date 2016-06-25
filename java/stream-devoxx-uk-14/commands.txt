@@ -1,0 +1,17 @@
+java -XX:-TieredCompilation -jar target/microbenchmarks.jar -wi 0 -r 50ms -i 20 -f 1 ".*seq.*"
+
+java -XX:-TieredCompilation -XX:CompileCommandFile=hotspot_compiler -jar target/microbenchmarks.jar -wi 0 -r 50ms -i 20 -f 1 ".*seq.*"
+
+
+java -XX:-TieredCompilation -XX:+UnlockDiagnosticVMOptions -XX:CompileCommand=print,*AbstractPipeline.copyInto -XX:PrintAssemblyOptions=hsdis-print-bytes -jar target/microbenchmarks.jar -wi 1 -w 50ms -r 50ms -i 20 -f 1 ".*seq.*"
+
+java -XX:-TieredCompilation -XX:CompileCommandFile=hotspot_compiler -XX:+UnlockDiagnosticVMOptions -XX:CompileCommand=print,*AbstractPipeline.copyInto -XX:PrintAssemblyOptions=hsdis-print-bytes -jar target/microbenchmarks.jar -wi 1 -w 50ms -r 50ms -i 20 -f 1 ".*seq.*"
+
+
+java -XX:-TieredCompilation -XX:+UnlockDiagnosticVMOptions -XX:+TraceClassLoading -XX:+LogCompilation -XX:+PrintAssembly -XX:PrintAssemblyOptions=hsdis-print-bytes -jar target/microbenchmarks.jar -wi 1 -w 50ms -r 50ms -i 20 -f 1 -of silent ".*seq.*"
+
+java -XX:-TieredCompilation -XX:CompileCommandFile=hotspot_compiler -XX:+UnlockDiagnosticVMOptions -XX:+TraceClassLoading -XX:+LogCompilation -XX:+PrintAssembly -XX:PrintAssemblyOptions=hsdis-print-bytes -jar target/microbenchmarks.jar -wi 1 -w 50ms -r 50ms -i 20 -f 1 -of silent ".*seq.*"
+
+
+
+

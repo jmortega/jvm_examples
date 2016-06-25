@@ -1,0 +1,4 @@
+moduleName=groovy-extension
+moduleVersion=1.0
+extensionClasses=org.groovy.cookbook.DateExtensions
+staticExtensionClasses=

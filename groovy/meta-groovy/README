@@ -1,0 +1,13 @@
+To execute the code in this chapter, you need to install Gradle (see chapter 2,
+ recipe 7).
+
+ To run all the tests, use :
+
+    gradle -i clean test
+
+To execute a specific test, use:
+
+    gradle clean test -i -Dtest.single=<Test Name>
+
+The tests are located in the src/test/groovy/org/groovy/cookbook/ folder.
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<bib:bibliography 
+  xmlns:bib="http://bibliography.org"
+  xmlns:lit="http://literature.org"
+>
+  <bib:author>William Shakespare</bib:author>
+  <lit:play>
+    <lit:year>1589</lit:year>
+    <lit:title>The Two Gentlemen of Verona.</lit:title>
+  </lit:play>
+  <lit:play>
+    <lit:year>1594</lit:year>
+    <lit:title>Love’s Labour’s Lost.</lit:title>
+  </lit:play>
+  <lit:play>
+    <lit:year>1594</lit:year>
+    <lit:title>Romeo and Juliet.</lit:title>
+  </lit:play>
+  <lit:play>
+    <lit:year>1595</lit:year>
+    <lit:title>A Midsummer-Night’s Dream.</lit:title>
+  </lit:play>
+</bib:bibliography>

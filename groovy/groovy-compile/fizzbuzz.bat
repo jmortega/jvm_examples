@@ -1,0 +1,1 @@
+java -cp .;%GROOVY_HOME%\lib\* fizzbuzz

@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="org.groovy.cookbook.TestCacheableAST" tests="1" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="luciano-mbp" time="1.382879044387E9">
+  <properties/>
+  <testcase name="testInvokeUnitTest" classname="org.groovy.cookbook.TestCacheableAST" time="3.887"/>
+  <system-out><![CDATA[50
+TIME IS MS. > 3777
+50
+TIME IS MS. > 0
+50
+TIME IS MS. > 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

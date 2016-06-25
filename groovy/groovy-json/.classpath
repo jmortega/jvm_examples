@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/xom-1.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/guava-13.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/joda-time-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-schema-validator-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/mailapi-1.4.3.jar"/>
+	<classpathentry kind="lib" path="lib/rhino-1.7R4.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-datatype-guava-1.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-dataformat-xml-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-module-jaxb-annotations-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="lib/stax2-api-3.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/woodstox-core-asl-4.1.2_1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

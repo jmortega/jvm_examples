@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(F:\play2_workspace\helloworld\public\images\favicon.png,F:\play2_workspace\helloworld\target\scala-2.10\classes\public\images\favicon.png)[0m
+[0m[[0mdebug[0m] [0m	(F:\play2_workspace\helloworld\public\javascripts\jquery-1.9.0.min.js,F:\play2_workspace\helloworld\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)[0m
+[0m[[0mdebug[0m] [0m	(F:\play2_workspace\helloworld\public\stylesheets\main.css,F:\play2_workspace\helloworld\target\scala-2.10\classes\public\stylesheets\main.css)[0m

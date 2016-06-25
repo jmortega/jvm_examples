@@ -1,0 +1,7 @@
+# ANT EXAMPLE
+
+To run the Ant script, download Ivy from here: https://ant.apache.org/ivy/download.html
+
+and copy the Ivy jar in ANT_HOME/lib or run the Ant script with the -lib argument:
+
+ant -lib ~/Downloads/ivy 
